@@ -13,12 +13,13 @@ export const Button: React.FC<ButtonProps> = ({ text, onClick, className = "", f
     <button
       onClick={onClick}
       className={`
-        ${fullWidth ? 'w-full' : 'px-8 md:px-12'}
+        ${fullWidth ? 'w-full' : 'px-10 md:px-14'}
         py-5 bg-emerald-500 hover:bg-emerald-600 
-        text-white font-extrabold text-lg md:text-xl 
-        rounded-xl transition-all duration-300 transform hover:scale-105 
-        shadow-xl hover:shadow-2xl active:scale-95
-        uppercase tracking-wider
+        text-white font-black text-lg md:text-xl 
+        rounded-2xl transition-all duration-300 transform hover:scale-[1.02] 
+        shadow-xl hover:shadow-emerald-500/25 active:scale-95
+        uppercase tracking-tight
+        flex items-center justify-center gap-2
         ${className}
       `}
     >
